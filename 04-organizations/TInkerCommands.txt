@@ -1,0 +1,17 @@
+User::first()
+
+$org = new Organization
+
+$org->user_id = 1
+
+$org->name = 'Fake Company'
+
+$org->type_id = 1
+
+$org->save()
+
+User::first()->organizations
+
+Organization::first()->user
+
+quit
